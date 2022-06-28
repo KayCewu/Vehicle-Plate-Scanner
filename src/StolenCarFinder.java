@@ -22,11 +22,11 @@ public class StolenCarFinder {
 
     JFrame CarFinder = new JFrame();
     JPanel Top = new JPanel(new FlowLayout());
-    JPanel Middle = new JPanel(new GridLayout(1, 1, 10, 10));
-    JPanel Bottom = new JPanel(new GridLayout());
+    JPanel Middle = new JPanel(new FlowLayout());
+    JPanel Bottom = new JPanel(new FlowLayout());
     JLabel lblHeader = new JLabel("Stolen Vehicle Finder");
     JLabel lblRegNo = new JLabel("Vehicle plane number");
-    JTextField txtNumPlate = new JTextField();
+    JTextField txtNumPlate = new JTextField(20);
     JButton btnVerify = new JButton("Verify");
 //Creating user interface
 
@@ -34,7 +34,7 @@ public class StolenCarFinder {
         Top.add(lblHeader);
         Middle.add(lblRegNo);
         Middle.add(txtNumPlate);
-        Bottom.add(btnVerify);
+        Middle.add(btnVerify);
        // btnVerify.addActionListener(new Verify());
         btnVerify.setToolTipText("Press this button to verify license number");
         //Adding panels to frame
@@ -43,7 +43,7 @@ public class StolenCarFinder {
         CarFinder.add(Bottom, BorderLayout.SOUTH);
         //Set Frame visibility
         CarFinder.setVisible(true);
-        CarFinder.setSize(400,200);
+        CarFinder.setSize(800,400);
         CarFinder.setLocation(100,100);
         CarFinder.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
