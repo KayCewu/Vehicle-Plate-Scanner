@@ -40,10 +40,9 @@ public class StolenCarFinder {
         //Adding panels to frame
         CarFinder.add(Top, BorderLayout.NORTH);
         CarFinder.add(Middle, BorderLayout.CENTER);
-        CarFinder.add(Bottom, BorderLayout.SOUTH);
         //Set Frame visibility
         CarFinder.setVisible(true);
-        CarFinder.setSize(800,400);
+        CarFinder.setSize(400,200);
         CarFinder.setLocation(100,100);
         CarFinder.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
