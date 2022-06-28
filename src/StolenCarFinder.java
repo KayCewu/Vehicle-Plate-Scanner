@@ -1,4 +1,5 @@
 
+import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.LayoutManager;
@@ -27,10 +28,20 @@ JLabel lblHeader=new JLabel("Stolen Vehicle Finder");
 JLabel lblRegNo=new JLabel("Vehicle plane number");
 JTextField txtNumPlate=new JTextField();
 JButton btnVerify=new JButton("Verify");
+//Creating user interface
 public void ShowInterface(){
     Top.add(lblHeader);
     Middle.add(lblRegNo);
     Middle.add(txtNumPlate);
+    Bottom.add(btnVerify);
+    btnVerify.addActionListener(new Verify());
+    btnVerify.setToolTipText("Press this button to verify license number");
+    //Adding panels to frame
+    CarFinder.add(Top, BorderLayout.NORTH);
+    CarFinder.add(Middle, BorderLayout.CENTER);
+    CarFinder.add(Bottom, BorderLayout.SOUTH);
+    
+    
     
 }
 
