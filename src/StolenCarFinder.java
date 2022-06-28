@@ -43,7 +43,7 @@ public class StolenCarFinder {
         CarFinder.add(Bottom, BorderLayout.SOUTH);
         //Set Frame visibility
         CarFinder.setVisible(true);
-        CarFinder.setSize(800,400);
+        CarFinder.setSize(400,200);
         CarFinder.setLocation(100,100);
         CarFinder.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
