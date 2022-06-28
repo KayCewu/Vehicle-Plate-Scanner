@@ -2,6 +2,7 @@
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.LayoutManager;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -25,6 +26,13 @@ JPanel Bottom=new JPanel (new GridLayout());
 JLabel lblHeader=new JLabel("Stolen Vehicle Finder");
 JLabel lblRegNo=new JLabel("Vehicle plane number");
 JTextField txtNumPlate=new JTextField();
+JButton btnVerify=new JButton("Verify");
+public void ShowInterface(){
+    Top.add(lblHeader);
+    Middle.add(lblRegNo);
+    Middle.add(txtNumPlate);
+    
+}
 
 
 
