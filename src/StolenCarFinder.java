@@ -5,6 +5,7 @@ import java.awt.LayoutManager;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -21,8 +22,9 @@ JFrame CarFinder=new JFrame();
 JPanel Top=new JPanel(new FlowLayout());
 JPanel Middle=new JPanel(new GridLayout(1,1,10,10));
 JPanel Bottom=new JPanel (new GridLayout());
-JLabel Header=new JLabel("Stolen Vehicle Finder");
-JLabel RegNo=new JLabel("Vehicle plane number");
+JLabel lblHeader=new JLabel("Stolen Vehicle Finder");
+JLabel lblRegNo=new JLabel("Vehicle plane number");
+JTextField txtNumPlate=new JTextField();
 
 
 
